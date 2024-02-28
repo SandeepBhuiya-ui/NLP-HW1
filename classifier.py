@@ -253,10 +253,10 @@ def main():
 
         if not test_path:
             author_dataset = create_dataset({
-                '/content/austen_utf8.txt': 0,
-                '/content/dickens_utf8.txt': 1,
-                '/content/tolstoy_utf8.txt': 2,
-                '/content/wilde_utf8.txt': 3
+                'austen_utf8.txt': 0,
+                'dickens_utf8.txt': 1,
+                'tolstoy_utf8.txt': 2,
+                'wilde_utf8.txt': 3
             })
             tokenized_dataset = author_dataset.map(lambda examples: preprocess_function(examples), batched=True)
 
